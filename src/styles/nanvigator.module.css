@@ -1,0 +1,16 @@
+/* nav */
+.nav_bg_color {
+  background: #eee;
+}
+
+.nav_bg_color_home {
+  background: transparent;
+}
+
+a.menu_color {
+  color: black;
+}
+
+a.menu_color_white {
+  color: white;
+}

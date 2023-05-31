@@ -1,0 +1,157 @@
+/* nav */
+.nav_bg_color {
+  background: #eee;
+}
+
+a.menu_color {
+  color: black;
+}
+
+.confirm {
+  align-self: flex-start;
+}
+
+/* form */
+.form_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.required_title_box {
+  width: 80%;
+  max-width: 650px;
+}
+
+.form_item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 80%;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.form_item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+
+.form_item_label {
+  width: 40%;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  font-family: serif;
+  margin: 12px 0;
+}
+
+.form_item_label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.form_item_label_required {
+  color: #e5c9e4;
+  font-size: 20px;
+  padding-right: 4px;
+}
+
+.form_item_input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  max-width: 350px;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 16px;
+}
+
+.form_item_input:focus {
+  outline: 2px solid #e5c9e4;
+}
+
+.form_item_textarea {
+  height: 200px;
+  padding-top: 0.5em;
+}
+
+.form_item_textarea:focus {
+  outline: 1px solid #e5c9e4;
+}
+
+.form_btn {
+  border-radius: 4px;
+  border: 2px solid #e5c9e4;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #fff;
+  color: gray;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.form_btn:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+.form_btn:active {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  border: 2px solid #e5c9e4;
+  background: #fff;
+  color: gray;
+  -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .2);
+  -moz-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .2);
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .2);
+}
+
+/* media */
+
+@media screen and (max-width: 600px) {
+  .required_title_box {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .form_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .form_item_label {
+    font-size: 14px;
+  }
+
+  .form_item_input {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form_item_label.isMsg {
+    margin: 12px 0;
+  }
+}
