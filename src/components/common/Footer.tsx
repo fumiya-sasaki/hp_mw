@@ -15,9 +15,10 @@ export const Footer = React.memo(() => {
           <Link className="footer_menu" href="/gallery">ギャラリー</Link>
           <Link className="footer_menu" href="/contact">お問い合わせ</Link>
           <Link target="_blank" href="https://www.instagram.com/momoko_wakabayashi/">
-            <InstagramIcon {...iconProps} /></Link>
+            <InstagramIcon {...iconProps} />
+          </Link>
         </div>
-        <p>copyrights© momoko wakabayashi. All Rights Reserved.</p>
+        <p className="copyrights">copyrights© momoko wakabayashi. All Rights Reserved.</p>
       </div>
     </footer>
   );

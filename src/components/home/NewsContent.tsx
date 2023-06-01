@@ -10,7 +10,7 @@ export const NewsContent = React.memo(() => {
         </div>
         <div className={styles.news_content_container}>
             {newsData.slice(0, 3).map(news => (
-                <Link href="news" key={news.title} className={styles.news_content_box}>
+                <Link href={`news/detail/${news.id}`} key={news.title} className={styles.news_content_box}>
                     <div className={styles.card}>
                         <p className={styles.image}><img src={news.img} alt="" /></p>
                         <p className={styles.card_title}>{news.title}</p>

@@ -1,6 +1,7 @@
 import { Navigator } from "@/components/common/Navigator";
 import styles from '@/styles/news.module.css'
 import { newsData } from "@/helper/displayData";
+import Link from "next/link";
 
 export const News = () => {
     return (<>
@@ -10,16 +11,16 @@ export const News = () => {
         </div>
         <div className={styles.news_container}>
             {newsData.map(news => (
-                <div key={news.title} className={styles.news_content_container}>
-                    <h5 className={styles.content_title}>{news.title}</h5>
+                <Link key={news.title} href={`news/detail/${news.id}`} className={styles.news_content_container}>
+                    <h4 className={styles.content_title}>{news.title}</h4>
                     <div className={styles.content_box}>
                         <img className={styles.content_img} src={news.img} />
                         <p className={styles.content_text}>{news.text}</p>
                     </div>
-                    <hr className={styles.hr_content} />
-                </div>
+                </Link>
             ))}
         </div>
+     
     </>);
 };
 export default News;
