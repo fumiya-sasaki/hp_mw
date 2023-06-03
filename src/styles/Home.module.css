@@ -63,9 +63,71 @@ h2.title {
 
 .animation_content_box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 200px;
+  position: relative;
+  gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .animation_content_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-bottom: 100px;
+    position: relative;
+    gap: 30px;
+  }
+
+  img.animation_img {
+    width: 60%;
+  }
+
+  .box_first {
+    width: 45%;
+    height: 70%;
+    background-color: #eee;
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  .box_second {
+    width: 45%;
+    height: 70%;
+    background-color: #eee;
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+    border-radius: 8px;
+  }
+
+}
+
+.box_first {
+  width: 45%;
+  height: 70%;
+  background-color: #eee;
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.box_second {
+  width: 45%;
+  height: 70%;
+  background-color: #eee;
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+  border-radius: 8px;
 }
 
 .animation_text_box {
@@ -81,16 +143,18 @@ p.animation_text {
   opacity: 0;
   transform: translate(0, 0);
   width: 30%;
+  margin: 10px
 }
 
 img.animation_img {
-  width: 70%;
+  width: 50%;
+  border-radius: 20px;
+  /* margin-right: 30px; */
 }
 
 .fadein {
   opacity: 0;
   transform: translate(0, 0);
-  border-radius: 30px;
 }
 
 .fadeUp {
@@ -137,7 +201,7 @@ p.news_title {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 4%;
+  margin-top: 100px;
 }
 
 .news_content_box {
@@ -146,7 +210,6 @@ p.news_title {
   text-decoration: none;
   color: black;
 }
-
 
 /* ---------- news card ----------*/
 .card {
@@ -212,7 +275,7 @@ a.more_button {
 }
 
 a.more_button::after {
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border-top: 2px solid black;
@@ -283,7 +346,7 @@ img.swiper_img {
 .swiper_button_next::after {
   width: 0.5rem;
   height: 0.5rem;
-  content: "";
+  content: '';
   border: solid gray;
   border-width: 2px 2px 0 0;
 }
@@ -372,7 +435,7 @@ img.profiel {
 @media screen and (max-width: 600px) {
   p.animation_text {
     writing-mode: vertical-rl;
-    font-size: 18px;
+    font-size: 16px;
     opacity: 0;
     transform: translate(0, 0);
     width: 30%;
@@ -383,7 +446,8 @@ img.profiel {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
+    margin-top: 40px;
   }
 
   .news_content_box {
@@ -394,27 +458,30 @@ img.profiel {
   p.image img {
     width: 100%;
     max-width: 100%;
-    height: 100px;
+    height: 80px;
     object-fit: cover;
+    border-bottom: 3px solid #eee;
   }
 
   .card_title {
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   p.card_text {
     margin: 10px 0 0;
     font-size: 13px;
     -webkit-line-clamp: 3;
+    display: none;
   }
 
   .swiper_wrapper {
     position: relative;
     background-color: #eee;
     padding-top: 50px;
-    margin-top: 20px;
+    margin-top: 80px;
     padding-bottom: 20px;
   }
 
@@ -429,6 +496,11 @@ img.profiel {
     top: 0%
   }
 
+  .profiel_box {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
   .profiel_content_box {
     display: flex;
     flex-direction: column;
@@ -438,8 +510,8 @@ img.profiel {
   }
 
   img.profiel {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
 
   .profiel_text {

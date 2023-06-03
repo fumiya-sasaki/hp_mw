@@ -1,4 +1,22 @@
 /* nav */
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin: 0;
+  width: 100%;
+}
+
 .nav_bg_color {
   background: #eee;
 }
@@ -13,4 +31,118 @@ a.menu_color {
 
 a.menu_color_white {
   color: white;
+}
+
+.openbtn {
+  display: none;
+}
+
+.media_nav {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header_nav {
+    display: none;
+  }
+
+  .media_nav {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    background: #999;
+    transition: all 0.6s;
+  }
+
+  .panelactive {
+    right: 0;
+  }
+
+  /*ナビゲーション*/
+  .media_nav ul {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .media_nav li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .media_nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+
+  .openbtn {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*×に変化*/
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    width: 45%;
+  }
+
+  .btn_white {
+    background-color: white;
+  }
+
+  .btn_gray {
+    background-color: #666;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
 }

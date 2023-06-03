@@ -1,7 +1,7 @@
-import { newsData } from "@/helper/displayData";
+import { newsData } from '@/helper/displayData';
 import styles from '@/styles/home.module.css'
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 export const NewsContent = React.memo(() => {
     return (<>
@@ -12,7 +12,7 @@ export const NewsContent = React.memo(() => {
             {newsData.slice(0, 3).map(news => (
                 <Link href={`news/detail/${news.id}`} key={news.title} className={styles.news_content_box}>
                     <div className={styles.card}>
-                        <p className={styles.image}><img src={news.img} alt="" /></p>
+                        <p className={styles.image}><img src={news.img} alt='' /></p>
                         <p className={styles.card_title}>{news.title}</p>
                         <p className={styles.card_text}>{news.text}</p>
                     </div>
@@ -20,7 +20,7 @@ export const NewsContent = React.memo(() => {
             ))}
         </div>
         <div className={styles.more_button_box}>
-            <Link className={styles.more_button} href="news">MORE</Link>
+            <Link className={styles.more_button} href='news'>MORE</Link>
         </div>
     </>);
 });

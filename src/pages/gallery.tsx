@@ -1,6 +1,6 @@
-import { Navigator } from "@/components/common/Navigator";
+import { Navigator } from '@/components/common/Navigator';
 import styles from '@/styles/gallery.module.css'
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
 const limit = 9;
 const businessID = process.env.NEXT_PUBLIC_INSTA_BUSINESS_ID
@@ -22,13 +22,13 @@ export const Gallery = () => {
 
     return (<>
         <Navigator />
-        <div className="heading_box">
-            <h2 className="heading">instagram gallery</h2>
+        <div className='heading_box'>
+            <h2 className='heading'>instagram gallery</h2>
         </div>
         <div className={styles.wrap}>
             <div className={styles.img_container}>
                 {instData && instData.map((data: any, index: number) => (
-                    <a key={index} href={data.permalink} className={styles.content} target="qoo_insta">
+                    <a key={index} href={data.permalink} className={styles.content} target='qoo_insta'>
                         <img className={styles.content} src={data.media_url} />
                     </a>
                 ))}

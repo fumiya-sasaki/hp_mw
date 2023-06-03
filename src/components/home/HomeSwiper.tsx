@@ -1,25 +1,25 @@
-import React from "react";
+import React from 'react';
 import styles from '@/styles/home.module.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
-import { collectionData } from "@/helper/displayData";
+import { collectionData } from '@/helper/displayData';
 
 export const HomeSwiper = React.memo(() => {
     return (
         <Swiper
             navigation={{
                 enabled: true,
-                nextEl: ".custom_swiper_button_next",
-                prevEl: ".custom_swiper_button_prev"
+                nextEl: '.custom_swiper_button_next',
+                prevEl: '.custom_swiper_button_prev'
             }}
             pagination={{
                 enabled: true,
                 clickable: true,
-                el: ".swiper_pagination",
-                type: "bullets",
+                el: '.swiper_pagination',
+                type: 'bullets',
                 bulletClass: `swiper-pagination-bullet ${styles.swiper_pagination_bullet}`,
                 bulletActiveClass: `swiper-pagination-bullet-active ${styles.swiper_pagination_bullet_active}`,
             }}
@@ -34,8 +34,8 @@ export const HomeSwiper = React.memo(() => {
                 </SwiperSlide>
             )}
             <div>
-                <div className="custom_swiper_button_prev"></div>
-                <div className="custom_swiper_button_next"></div>
+                <div className='custom_swiper_button_prev'></div>
+                <div className='custom_swiper_button_next'></div>
             </div>
         </Swiper>
     );
