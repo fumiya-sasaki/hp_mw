@@ -6,8 +6,10 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
 import { collectionData } from '@/helper/displayData';
+import { getWindowSize } from '@/hooks/GetWindowSize';
 
 export const HomeSwiper = React.memo(() => {
+    const { width } = getWindowSize();
     return (
         <Swiper
             navigation={{
@@ -23,7 +25,7 @@ export const HomeSwiper = React.memo(() => {
                 bulletClass: `swiper-pagination-bullet ${styles.swiper_pagination_bullet}`,
                 bulletActiveClass: `swiper-pagination-bullet-active ${styles.swiper_pagination_bullet_active}`,
             }}
-            slidesPerView={2}
+            slidesPerView={width > 800 ? 2 : 1}
             centeredSlides={true}
             modules={[Navigation, Pagination]}
             className={styles.swiper}>

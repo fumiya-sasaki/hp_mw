@@ -79,7 +79,8 @@ a.menu_color {
 }
 
 .form_item_input:focus {
-  outline: 2px solid #e5c9e4;
+  border: 2px solid #e5c9e4;
+  outline: none;
 }
 
 .form_item_textarea {
@@ -88,7 +89,8 @@ a.menu_color {
 }
 
 .form_item_textarea:focus {
-  outline: 1px solid #e5c9e4;
+  border: 2px solid #e5c9e4;
+  outline: none;
 }
 
 .form_btn {
@@ -145,8 +147,8 @@ a.menu_color {
   }
 
   .form_item_input {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     max-width: 100%;
   }

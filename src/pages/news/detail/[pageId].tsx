@@ -16,7 +16,7 @@ export const News = () => {
             </div>
             <div className={styles.detail_container}>
                 <div className={styles.detail_content_box}>
-                    <img className={styles.detail_img} src={`../../${newsData.img}`} alt='' />
+                    <img className={styles.detail_img} src={newsData.img} alt='' />
                     <p className={styles.detail_text}>{newsData.text}</p>
                 </div>
             </div>

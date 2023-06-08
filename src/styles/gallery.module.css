@@ -22,6 +22,7 @@ a.content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 img.content {
@@ -42,6 +43,13 @@ img.content {
 }
 
 @media screen and (max-width: 900px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
   .img_container {
     width: 90%;
     display: flex;

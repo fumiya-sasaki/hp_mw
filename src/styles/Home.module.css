@@ -431,17 +431,7 @@ img.profiel {
 }
 
 /* media */
-
-@media screen and (max-width: 600px) {
-  p.animation_text {
-    writing-mode: vertical-rl;
-    font-size: 16px;
-    opacity: 0;
-    transform: translate(0, 0);
-    width: 30%;
-    margin: 0 8px;
-  }
-
+@media screen and (max-width: 800px) {
   .news_content_container {
     flex-direction: column;
     justify-content: center;
@@ -477,25 +467,6 @@ img.profiel {
     display: none;
   }
 
-  .swiper_wrapper {
-    position: relative;
-    background-color: #eee;
-    padding-top: 50px;
-    margin-top: 80px;
-    padding-bottom: 20px;
-  }
-
-  .swiper {
-    margin-top: 20px;
-    padding-top: 0;
-  }
-
-  p.swiper_title {
-    font-size: 18px;
-    left: 38%;
-    top: 0%
-  }
-
   .profiel_box {
     margin-top: 40px;
     margin-bottom: 60px;
@@ -517,5 +488,36 @@ img.profiel {
   .profiel_text {
     width: 80%;
     font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  p.animation_text {
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    opacity: 0;
+    transform: translate(0, 0);
+    width: 30%;
+    margin: 0 8px;
+  }
+
+  .swiper_wrapper {
+    position: relative;
+    background-color: #eee;
+    padding-top: 50px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .swiper {
+    margin-top: 20px;
+    padding-top: 0;
+  }
+
+  p.swiper_title {
+    font-size: 18px;
+    left: 38%;
+    top: 0%
   }
 }

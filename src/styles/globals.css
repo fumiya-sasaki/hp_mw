@@ -169,11 +169,16 @@ footer {
   background-color: #e5c9e4;
 }
 
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 /* media */
 
 @media screen and (max-width: 600px) {
   .heading_box {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .heading {

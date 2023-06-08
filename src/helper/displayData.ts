@@ -9,7 +9,7 @@ export const newsState: { [key: number]: NewsData } = {
     1: {
         id: 1,
         title: '【 料理教室のお知らせ 】aaasaaaa',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
         text: '都内の方が行きやすい！という方に料理教室のお知らせです✨\n' +
             'この度、目黒区洗足駅すぐの「喫茶はちや(平野商店)」さんにて料理教室を開催する事になりました。\n\n' +
             '普段あまり料理をしないけど、料理ができるようになりたい！そんな方にぜひご参加いただきたい、初心者向けの料理教室になります✨\n\n' +
@@ -22,7 +22,7 @@ export const newsState: { [key: number]: NewsData } = {
     2: {
         id: 2,
         title: 'チョコレートケーキ',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
         text: ' これはカード型のデザインです。これはカード型のデザインです。' +
             'これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。' +
             'これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。'
@@ -30,7 +30,7 @@ export const newsState: { [key: number]: NewsData } = {
     3: {
         id: 3,
         title: 'aaaaaaaa',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
         text: ' これはカード型のデザインです。これはカード型のデザインです。' +
             'これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。' +
             'これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。これはカード型のデザインです。'
@@ -42,14 +42,14 @@ export const newsData: NewsData[] = Object.values(newsState).reverse();
 export const collectionData = [
     {
         title: 'チョコレートケーキ',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
     },
     {
         title: 'レモンケーキ',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
     },
     {
         title: 'パイナップルケーキ',
-        img: '3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
+        img: '/3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG',
     }
 ]
