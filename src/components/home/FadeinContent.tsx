@@ -24,18 +24,18 @@ export const FadeinContent = React.memo(() => {
                 </div>
                 <div className={styles.box_first}></div>
                 <img className={`${styles.animation_img} ${styles.fadein} ${onScrollAddFadeInStyle(fadeInFirstInView)}`}
-                    src='3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG' />
+                    src='fade_in_studio.JPG' />
             </div>
             <div className={styles.animation_content_box}>
             <div className={styles.box_second}></div>
                 <img className={`${styles.animation_img} ${styles.fadein} ${onScrollAddFadeInStyle(fadeInSecondInView)}`}
-                    src='3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG' />
+                    src='fade_in_buy.JPG' />
                 <div ref={fadeInSecondRef} className={`${styles.animation_text_box} ${styles.fadein}` +
                     `${onScrollAddFadeInStyle(fadeInSecondInView)}`}>
                     <p className={`${styles.animation_text}` +
-                        ` ${onScrollAddFadeInStyle(fadeInSecondInView)}`}>料理教室開催中</p>
+                        ` ${onScrollAddFadeInStyle(fadeInSecondInView)}`}>随時開催中</p>
                     <p className={`${styles.animation_text}` +
-                        ` ${onScrollAddFadeInStyle(fadeInSecondInView)}`}>季節を感じる</p>
+                        ` ${onScrollAddFadeInStyle(fadeInSecondInView)}`}>お菓子販売</p>
                 </div>
             </div>
         </div>

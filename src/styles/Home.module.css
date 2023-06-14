@@ -229,6 +229,7 @@ p.image img {
   width: 100%;
   max-width: 300px;
   height: 200px;
+  object-fit: cover;
 }
 
 .card_title {
@@ -315,6 +316,8 @@ p.swiper_title {
 
 img.swiper_img {
   width: 80%;
+  height: 80%;
+  object-fit: cover;
   border-radius: 10px;
 }
 

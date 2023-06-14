@@ -11,7 +11,7 @@ export const News = () => {
         </div>
         <div className={styles.news_container}>
             {newsData.map(news => (
-                <Link key={news.title} href={`news/detail/${news.id}`} className={styles.news_content_container}>
+                <Link key={news.id } href={`news/detail/${news.id}`} className={styles.news_content_container}>
                     <h4 className={styles.content_title}>{news.title}</h4>
                     <div className={styles.content_box}>
                         <img className={styles.content_img} src={news.img} />

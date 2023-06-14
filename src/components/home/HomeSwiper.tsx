@@ -6,10 +6,10 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
 import { collectionData } from '@/helper/displayData';
-import { getWindowSize } from '@/hooks/GetWindowSize';
+import { GetWindowSize } from '@/hooks/GetWindowSize';
 
 export const HomeSwiper = React.memo(() => {
-    const { width } = getWindowSize();
+    const { width } = GetWindowSize();
     return (
         <Swiper
             navigation={{

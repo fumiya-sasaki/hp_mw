@@ -12,7 +12,7 @@ export const Home = () => {
       <Navigator isChange={navInView} />
       <h2 className={styles.title}>Momoko Wakabayashi</h2>
       <div ref={navRef}>
-        <img className={styles.top} src='3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG' />
+        <img className={styles.top} src='top.JPG' />
       </div>
       <hr className={styles.vertical_hr} />
       <FadeinContent />
@@ -27,13 +27,12 @@ export const Home = () => {
       <div className={styles.profiel_box}>
         <p className={styles.news_title}>PROFIEL</p>
         <div className={styles.profiel_content_box}>
-          <img className={styles.profiel} src='3D5AAEEB-540B-4A23-87F3-B90DD4B57CCB.JPG' />
+          <img className={styles.profiel} src='profiel.JPG' />
           <p className={styles.profiel_text}>
-            若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。
-            若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。
-            若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。
-            若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。
-            若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。若林桃子です。
+            越谷市出身。<br />大学卒業後により深く料理を学びたいと思い調理師専門学校へ。<br />
+            そこで栄養学を学び、卒業後は幼稚園の栄養士として勤務。<br />
+            より料理を学ぶ為、都内1つ星フランス料理店で修行しながら、料理家「坂田阿希子」を師事。<br />
+            料理教室やお菓子販売、イベント出店を随時開催中。
           </p>
         </div>
       </div>
