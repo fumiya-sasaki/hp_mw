@@ -29,7 +29,7 @@ export const Gallery = () => {
             <div className={styles.img_container}>
                 {instData && instData.map((data: any, index: number) => (
                     <a key={index} href={data.permalink} className={styles.content} target='qoo_insta'>
-                        <img className={styles.content} src={data.media_url} />
+                        <img alt='' className={styles.content} src={data.media_url} />
                     </a>
                 ))}
             </div>

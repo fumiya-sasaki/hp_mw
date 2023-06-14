@@ -31,7 +31,7 @@ export const HomeSwiper = React.memo(() => {
             className={styles.swiper}>
             {collectionData.map((content: { title: string, img: string }, index: number) =>
                 <SwiperSlide key={index} className={styles.swiper_slide}>
-                    <img className={styles.swiper_img} src={content.img} />
+                    <img alt='' className={styles.swiper_img} src={content.img} />
                     <p>{content.title}</p>
                 </SwiperSlide>
             )}

@@ -17,7 +17,8 @@ export const Navigator = React.memo(({
     <div className={`${styles.openbtn} ${isVisial ? styles.active : undefined}`} onClick={onClick}>
       <span className={!isChange ? styles.btn_gray : styles.btn_white}></span>
       <span className={!isChange ? styles.btn_gray : styles.btn_white}></span>
-      <span className={!isChange ? styles.btn_gray : styles.btn_white}></span></div>
+      <span className={!isChange ? styles.btn_gray : styles.btn_white}></span>
+    </div>
     <nav className={`${styles.media_nav} ${isVisial ? styles.panelactive : undefined}`}>
       <ul>
         <li><Link href='/'>home</Link></li>

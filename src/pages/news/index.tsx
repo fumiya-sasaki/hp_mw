@@ -14,7 +14,7 @@ export const News = () => {
                 <Link key={news.id } href={`news/detail/${news.id}`} className={styles.news_content_container}>
                     <h4 className={styles.content_title}>{news.title}</h4>
                     <div className={styles.content_box}>
-                        <img className={styles.content_img} src={news.img} />
+                        <img alt='' className={styles.content_img} src={news.img} />
                         <p className={styles.content_text}>{news.text}</p>
                     </div>
                 </Link>

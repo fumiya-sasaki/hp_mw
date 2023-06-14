@@ -12,7 +12,7 @@ export const Home = () => {
       <Navigator isChange={navInView} />
       <h2 className={styles.title}>Momoko Wakabayashi</h2>
       <div ref={navRef}>
-        <img className={styles.top} src='top.JPG' />
+        <img alt='' className={styles.top} src='top.JPG' />
       </div>
       <hr className={styles.vertical_hr} />
       <FadeinContent />
@@ -27,7 +27,7 @@ export const Home = () => {
       <div className={styles.profiel_box}>
         <p className={styles.news_title}>PROFIEL</p>
         <div className={styles.profiel_content_box}>
-          <img className={styles.profiel} src='profiel.JPG' />
+          <img alt='' className={styles.profiel} src='profiel.JPG' />
           <p className={styles.profiel_text}>
             越谷市出身。<br />大学卒業後により深く料理を学びたいと思い調理師専門学校へ。<br />
             そこで栄養学を学び、卒業後は幼稚園の栄養士として勤務。<br />
