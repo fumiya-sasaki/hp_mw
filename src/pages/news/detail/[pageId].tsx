@@ -1,23 +1,37 @@
 import { Navigator } from '@/components/common/Navigator';
 import styles from '@/styles/detail.module.css'
-import { NewsData, newsState } from '@/helper/displayData';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
+import { NewsBaseData, NewsData } from '@/common/types';
+import { useEffect } from 'react';
+import { RootState, useAppDispatch } from '@/hooks/common';
+import { getPinpointNewsData } from '@/redux/news';
 
-export const News = () => {
+export const PageId = () => {
     const router = useRouter();
     const { pageId } = router.query;
-    const newsData: NewsData = newsState[Number(pageId)];
+    const news: NewsData = useSelector((state: RootState) => state.news.data);
+    const newsData: NewsBaseData = news[Number(pageId)];
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        if (!pageId) {
+            const urls: string[] = window.location.href.split('/').filter(item => item !== '')
+            dispatch(getPinpointNewsData(urls[urls.length - 1]));
+        }
+    }, [pageId]);
+
     return (<>
         <Navigator />
-        {pageId && <>
+        {newsData && <>
             <div className='heading_box'>
                 <h2 className='heading'>{newsData.title}</h2>
             </div>
             <div className={styles.detail_container}>
                 <div className={styles.detail_content_box}>
-                    <img className={styles.detail_img} src={newsData.img} alt='' />
-                    <p className={styles.detail_text}>{newsData.text}</p>
+                    <img className={styles.detail_img} src={newsData.imageUrls[0]} alt='' />
+                    <p className={styles.detail_text}>{newsData.content}</p>
                 </div>
             </div>
         </>}
@@ -28,4 +42,4 @@ export const News = () => {
         </div>
     </>);
 };
-export default News;
+export default PageId;

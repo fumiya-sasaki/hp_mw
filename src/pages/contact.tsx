@@ -7,7 +7,7 @@ const key = process.env.NEXT_PUBLIC_EJS_INIT_KEY;
 const serviceID = process.env.NEXT_PUBLIC_EJS_SERVICE_ID;
 const templateID = process.env.NEXT_PUBLIC_EJS_TEMPLATE_ID;
 
-export const Contant = () => {
+export const Contanct = () => {
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [phoneNumber, setPhoneNumber] = useState<string>('');
@@ -63,4 +63,4 @@ export const Contant = () => {
         </form>
     </>);
 };
-export default Contant;
+export default Contanct;
