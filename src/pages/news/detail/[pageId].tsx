@@ -7,6 +7,7 @@ import { NewsBaseData, NewsData } from '@/common/types';
 import { useEffect } from 'react';
 import { RootState, useAppDispatch } from '@/hooks/common';
 import { getPinpointNewsData } from '@/redux/news';
+import { CustomSwiper } from '@/components/common/CustomSwiper';
 
 export const PageId = () => {
     const router = useRouter();
@@ -30,9 +31,12 @@ export const PageId = () => {
             </div>
             <div className={styles.detail_container}>
                 <div className={styles.detail_content_box}>
-                    <img className={styles.detail_img} src={newsData.imageUrls[0]} alt='' />
-                    <p className={styles.detail_text}>{newsData.content}</p>
+                    <CustomSwiper contents={newsData.imageUrls} />
+                    <div>
+                        <div className='swiper_pagination'></div>
+                    </div>
                 </div>
+                <p className={styles.detail_text}>{newsData.content}</p>
             </div>
         </>}
         <div className={styles.back_button_container}>
